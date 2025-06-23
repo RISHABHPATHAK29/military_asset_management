@@ -148,11 +148,7 @@ Pull requests are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 [MIT](LICENSE)
 
----
 
-## 🏅 Credits
-
-Developed by Chirag Sahani
 
 
 
