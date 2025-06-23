@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 import pool from '../config/database.js';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-in-production';
+const JWT_SECRET = process.env.JWT_SECRET || 'PIzm/6/Esr3g9WF4Kozk+hd7dR94TQZ3OysbKxCNax2LCFnLmEpY04wTr98K7YF3OwgVloKer1YFb3IXViadnQ';
 
 export const authenticateToken = async (req, res, next) => {
   const authHeader = req.headers['authorization'];
