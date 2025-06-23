@@ -21,12 +21,12 @@ INSERT INTO asset_types (name, category, unit) VALUES
 
 -- Insert admin user (password: AdminPass123!)
 INSERT INTO users (username, email, password_hash, first_name, last_name, role, base_id) VALUES
-('admin', 'admin@military.gov', '$2a$10$$2y$10$vSPnrlWZWsH0at9td.LetuAPKaNFWKv1kN96TyhhLMsddt3kG6rk6', 'System', 'Administrator', 'admin', 1);
+('admin', 'admin@military.gov', '$2a$10$YourHashedPasswordHere', 'System', 'Administrator', 'admin', 1);
 
 -- Insert base commanders (password: Commander123!)
 INSERT INTO users (username, email, password_hash, first_name, last_name, role, base_id) VALUES
-('cmd.liberty', 'commander.fl@military.gov', '$2a$10$$2y$10$yUFbGwS2sg7aGsXu4fuPi.0E5x6IpkMJiezP0jxzfWKWcpUf1gG.y', 'John', 'Smith', 'base_commander', 1),
-('cmd.pendleton', 'commander.cp@military.gov', '$2a$10$$2y$10$yUFbGwS2sg7aGsXu4fuPi.0E5x6IpkMJiezP0jxzfWKWcpUf1gG.y', 'Sarah', 'Johnson', 'base_commander', 2),
+('cmd.liberty', 'commander.fl@military.gov', '$2a$10$YourHashedPasswordHere', 'John', 'Smith', 'base_commander', 1),
+('cmd.pendleton', 'commander.cp@military.gov', '$2a$10$YourHashedPasswordHere', 'Sarah', 'Johnson', 'base_commander', 2),
 ('cmd.andrews', 'commander.jba@military.gov', '$2a$10$YourHashedPasswordHere', 'Michael', 'Davis', 'base_commander', 3);
 
 -- Insert logistics officers (password: Logistics123!)
