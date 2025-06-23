@@ -7,7 +7,7 @@ A secure, full-stack web application for managing the movement, assignment, and 
 
 ## 🚀 Live Demo
 
-- **Full-Stack App:** [Live Demo](https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/9ceea7357ce48c7bacf8562af7a17d10/47e7d623-c12b-4f2c-8313-3e3db3d27069/index.html)
+- **Full-Stack App:** [Live Demo]()
 - **Backend (Supabase):** [Supabase Dashboard](https://app.supabase.com/) *(requires credentials)*
 
 ---
@@ -69,8 +69,7 @@ All tables are relational with foreign keys and indexed for performance. Row Lev
 ### 1. Clone the Repo
 
 ```
-git clone https://github.com/chiragSahani/MilitaryAssetManagementSystem.git
-cd MilitaryAssetManagementSystem
+
 ```
 
 ### 2. Setup Supabase Backend
