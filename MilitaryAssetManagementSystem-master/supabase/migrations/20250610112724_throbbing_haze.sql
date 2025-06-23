@@ -19,21 +19,21 @@ INSERT INTO asset_types (name, category, unit) VALUES
 ('Body Armor', 'Protection', 'piece'),
 ('First Aid Kit', 'Medical', 'piece');
 
--- Admin
-INSERT INTO users (username, email, password_hash, first_name, last_name, role, base_id, is_active) VALUES
-('admin', 'admin@military.gov', '$2a$10$LzRI0RyYceM8zZImF51c2uR3nyqr5r9cDy3/Mwzid.c0p0J5rM72K', 'System', 'Administrator', 'admin', 1, true);
+-- Insert admin user (password: AdminPass123!)
+INSERT INTO users (username, email, password_hash, first_name, last_name, role, base_id) VALUES
+('admin', 'admin@military.gov', '$2a$10$YourHashedPasswordHere', 'System', 'Administrator', 'admin', 1);
 
--- Base Commanders
-INSERT INTO users (username, email, password_hash, first_name, last_name, role, base_id, is_active) VALUES
-('cmd.liberty', 'commander.fl@military.gov', '$2a$10$OAFbTu0w/Bd7EpKvnpXT0Ot3iKZoYuh0vx2zH30q.6.A8eOXOZXDu', 'John', 'Smith', 'base_commander', 1, true),
-('cmd.pendleton', 'commander.cp@military.gov', '$2a$10$OAFbTu0w/Bd7EpKvnpXT0Ot3iKZoYuh0vx2zH30q.6.A8eOXOZXDu', 'Sarah', 'Johnson', 'base_commander', 2, true),
-('cmd.andrews', 'commander.jba@military.gov', '$2a$10$OAFbTu0w/Bd7EpKvnpXT0Ot3iKZoYuh0vx2zH30q.6.A8eOXOZXDu', 'Michael', 'Davis', 'base_commander', 3, true);
+-- Insert base commanders (password: Commander123!)
+INSERT INTO users (username, email, password_hash, first_name, last_name, role, base_id) VALUES
+('cmd.liberty', 'commander.fl@military.gov', '$2a$10$YourHashedPasswordHere', 'John', 'Smith', 'base_commander', 1),
+('cmd.pendleton', 'commander.cp@military.gov', '$2a$10$YourHashedPasswordHere', 'Sarah', 'Johnson', 'base_commander', 2),
+('cmd.andrews', 'commander.jba@military.gov', '$2a$10$YourHashedPasswordHere', 'Michael', 'Davis', 'base_commander', 3);
 
--- Logistics Officers
-INSERT INTO users (username, email, password_hash, first_name, last_name, role, base_id, is_active) VALUES
-('log.liberty', 'logistics.fl@military.gov', '$2a$10$G6ztEwKi9TeZLeHP4j8DXuFIMCnY.DDeMd.CUNLOcDP2xNY4Mw63i', 'Emma', 'Wilson', 'logistics_officer', 1, true),
-('log.pendleton', 'logistics.cp@military.gov', '$2a$10$G6ztEwKi9TeZLeHP4j8DXuFIMCnY.DDeMd.CUNLOcDP2xNY4Mw63i', 'David', 'Brown', 'logistics_officer', 2, true),
-('log.andrews', 'logistics.jba@military.gov', '$2a$10$G6ztEwKi9TeZLeHP4j8DXuFIMCnY.DDeMd.CUNLOcDP2xNY4Mw63i', 'Lisa', 'Taylor', 'logistics_officer', 3, true);
+-- Insert logistics officers (password: Logistics123!)
+INSERT INTO users (username, email, password_hash, first_name, last_name, role, base_id) VALUES
+('log.liberty', 'logistics.fl@military.gov', '$2a$10$YourHashedPasswordHere', 'Emma', 'Wilson', 'logistics_officer', 1),
+('log.pendleton', 'logistics.cp@military.gov', '$2a$10$YourHashedPasswordHere', 'David', 'Brown', 'logistics_officer', 2),
+('log.andrews', 'logistics.jba@military.gov', '$2a$10$YourHashedPasswordHere', 'Lisa', 'Taylor', 'logistics_officer', 3);
 
 -- Update base commanders
 UPDATE bases SET commander_id = 2 WHERE id = 1;
